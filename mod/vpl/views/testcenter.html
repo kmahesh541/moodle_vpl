@@ -1,0 +1,656 @@
+<html><head>
+	<base href="">
+	<title>ISEEIT</title>
+
+
+
+
+	<link href="https://www.talentlms.com/pages/themes/default/css/less/talent.css?1445429697" rel="stylesheet" type="text/css">
+	<link href="https://www.talentlms.com/pages/themes/default/css/animate.css?v=175" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://kartparadigm.com/sort/jquery-latest.js"></script>
+	<script type="text/javascript" src="http://kartparadigm.com/sort/jquery.tablesorter.js"></script>
+	<style>
+
+		select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], inpu
+		t[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+			display: inline-block;
+			height: 25px !important;
+			padding: 4px 6px;
+			margin-bottom: 9px;
+			font-size: 13px;
+			line-height: 18px;
+			color: #555;
+			border-radius: 4px;
+			vertical-align: middle;
+		}
+		.tleft{ float:left;width:49.5%;height:130px;}
+		.tright{ float:right;width:49.5%;height:130px;}
+		.sta{border:1px solid gray;  margin-top:10px;float:left;width:100%;height:75px;}
+		.sub{
+			width: 23%;
+			border-right: 1px solid #808080;
+			padding: 15px 10px;
+			font-size: 16px;
+			float: left;
+			height: 45px;
+
+		}
+		.report{border: 1px solid #808080;
+			margin-top: 3px;
+			padding: 0px;
+			float: right;
+			width: 100%;}
+.con{width:100%;}
+
+.repo{margin-top:10px;width:100%;height:350px;float:left;padding-top:10px;}
+		#panel, #flip {
+			padding: 5px;
+			text-align: center
+		}
+		p, fieldset, table, pre {
+			margin-bottom: 0em !important;
+		}
+
+		meter {
+			font-size: 6px;
+			margin-top: 5px;
+			width: 85%;
+		}
+		#flip{
+			color: #FFF;
+			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+			background-color: #0362A9;
+			background-image: linear-gradient(to bottom, #0378A9, #0341A9);
+			background-repeat: repeat-x;
+			border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+			text-align: center;
+			border-width: 0px 0px 1px 1px;
+			font-size: 15px;
+			font-family: Arial;
+			font-weight: bold;
+			color: #FFF;
+			cursor: pointer;
+		}
+
+
+		#panel {
+			display: block;
+		}
+
+		#t01 th, td {
+			padding: 5px;
+			text-align: left;
+			border: 1px solid black;
+
+		}
+		table#t01 {
+			width: 100%;
+			border: 1px solid gray;
+			border-collapse: collapse;
+		}
+		.CSSTableGenerator {
+			margin:0px;padding:0px;
+			width:100%;
+			border:1px solid #c4baba;
+
+			-moz-border-radius-bottomleft:0px;
+			-webkit-border-bottom-left-radius:0px;
+			border-bottom-left-radius:0px;
+
+			-moz-border-radius-bottomright:0px;
+			-webkit-border-bottom-right-radius:0px;
+			border-bottom-right-radius:0px;
+
+			-moz-border-radius-topright:0px;
+			-webkit-border-top-right-radius:0px;
+			border-top-right-radius:0px;
+
+			-moz-border-radius-topleft:0px;
+			-webkit-border-top-left-radius:0px;
+			border-top-left-radius:0px;
+		}.CSSTableGenerator table{
+			 border-collapse: collapse;
+			 border-spacing: 0;
+			 width:100%;
+			 height:100%;
+			 margin:0px;padding:0px;
+		 }.CSSTableGenerator tr:last-child td:last-child {
+			  -moz-border-radius-bottomright:0px;
+			  -webkit-border-bottom-right-radius:0px;
+			  border-bottom-right-radius:0px;
+		  }
+		.CSSTableGenerator table tr:first-child th:first-child {
+			-moz-border-radius-topleft:0px;
+			-webkit-border-top-left-radius:0px;
+			border-top-left-radius:0px;
+		}
+		.CSSTableGenerator table tr:first-child th:last-child {
+			-moz-border-radius-topright:0px;
+			-webkit-border-top-right-radius:0px;
+			border-top-right-radius:0px;
+		}.CSSTableGenerator tr:last-child td:first-child{
+			 -moz-border-radius-bottomleft:0px;
+			 -webkit-border-bottom-left-radius:0px;
+			 border-bottom-left-radius:0px;
+		 }.CSSTableGenerator tr:hover td{
+
+		  }
+		.CSSTableGenerator tr:nth-child(odd){ background-color:#fcf9f7; }
+		.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
+																				  vertical-align:middle;
+
+
+																				  border:1px solid #c4baba;
+																				  border-width:0px 1px 1px 0px;
+																				  text-align:left;
+																				  padding: 0px 8px;
+																				  font-size:13px;
+																				  font-family:Arial;
+																				  font-weight:normal;
+																				  color:#000000;
+																			  }.CSSTableGenerator tr:last-child td{
+																				   border-width:0px 1px 0px 0px;
+																			   }.CSSTableGenerator tr td:last-child{
+																					border-width:0px 0px 1px 0px;
+																				}.CSSTableGenerator tr:last-child td:last-child{
+																					 border-width:0px 0px 0px 0px;
+																				 }
+		.CSSTableGenerator tr:first-child th{
+			color: #FFF;
+			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+			background-color: #0362A9;
+			background-image: linear-gradient(to bottom, #0378A9, #0341A9);
+			background-repeat: repeat-x;
+			border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+			border:0px solid #c4baba;
+			text-align:center;
+			border-width:0px 0px 1px 1px;
+			font-size:15px;
+			font-family:Arial;
+			font-weight:bold;
+			color:#ffffff;
+		}
+		.CSSTableGenerator tr:first-child:hover th{
+			color: #FFF;
+			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+			background-color: #0362A9;
+			background-image: linear-gradient(to bottom, #0378A9, #0341A9);
+			background-repeat: repeat-x;
+			//border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+		}
+		.CSSTableGenerator tr:first-child th:first-child{
+			border-width:0px 0px 1px 0px;
+		}
+		.CSSTableGenerator tr:first-child th:last-child{
+			border-width:0px 0px 1px 1px;
+		}
+
+
+
+		#progressBar {
+			width: 400px;
+			height: 22px;
+			border: 1px solid #111;
+			background-color: #292929;
+		}
+		#progressBar div {
+			height: 100%;
+			color: #fff;
+			text-align: right;
+			line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+			width: 0;
+			background-color: #0099ff;
+		}
+		.btn {
+			background: #3498db;
+			background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+			background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+			background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+			background-image: -o-linear-gradient(top, #3498db, #2980b9);
+			background-image: linear-gradient(to bottom, #3498db, #2980b9);
+			font-family: Arial;
+			color: #ffffff;
+			font-size: 15px;
+			padding: 5px 18px 6px 18px;
+			text-decoration: none;
+		}
+
+		.btn:hover {
+			background: #3cb0fd;
+			background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			text-decoration: none;
+		}
+		.CSSTableGenerator { overflow: auto; }
+		.CSSTableGenerator tbody { height: auto; }
+
+
+tbody tr td:first-child{
+	text-align: center;
+}
+		tbody tr td:last-child{
+			text-align: center;
+		}
+		tbody tr th:first-child{
+			text-align: center !important;
+		}
+		tbody tr th:last-child{
+			text-align: center !important;
+		}
+
+		.navbar {
+			margin-bottom: 0px;
+		}
+		thead{
+			cursor: pointer;
+		}
+		td{height: 30px;}
+#t01 img{
+padding:5px;
+}
+.sta {
+    border: 1px solid #808080;
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+    height: 45px;
+}
+.sub {
+    width: 23%;
+    border-right: 1px solid #808080;
+    padding: 2px 10px;
+    font-size: 16px;
+    float: left;
+    height: 42px;
+}
+ .repo {
+    margin-top: 0px;
+    width: 100%;
+    height: 350px;
+    float: left;
+    padding-top: 5px;
+}
+.report {
+    border: 1px solid #808080;
+    margin-top: 3px;
+    padding: 0px;
+    float: right;
+    width: 100%;
+    height: 750px;
+    margin-bottom: 30px;
+}
+#fl{
+height:20px;
+}
+	</style>
+
+	<script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssbase/cssbase-min.css">	<script>
+		function toggle_visibility(id)
+		{
+			var e = document.getElementById(id);
+			if (e.style.display == 'block' || e.style.display=='')
+			{
+				document.getElementById("fl").innerHTML="<span style='float:left;margin-right:180px;margin-left:40px;'>Course : Core Java </span><span style='float:left;margin-right:180px;'> Topic : Inheritance</span>     <span style='float:left;margin-right:180px;'>Activity : Quiz</span> <i style='float:right' class='fa fa-angle-double-down' style='font-size:18px;'></i>"
+				e.style.display = 'none';
+			}
+			else
+			{
+				document.getElementById("fl").innerHTML="<i class='fa fa-angle-double-up' style='font-size:18px;'></i>"
+
+				e.style.display = 'block';
+			}
+		}
+
+
+	
+	</script>
+
+</head>
+<body id="tl-main-body">
+<!-- Google Tag Manager -->
+
+
+<!-- End Google Tag Manager -->
+
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid nav-container" id="tl-navigation-bar-handler">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="http://kartparadigm.com/kmit/login.html"><h1 style="margin: 0em 0px;">KMIT</h1></a>
+			<div id="tl-loading-pane" class="hide affix text-center"><p><img src="pages/images/loading-small.gif"></p></div>
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+					<li class="dropdown" id="tl-dropdown-roles">
+						<a href="#" class="dropdown-toggle tl-nabvar-roles-button" data-toggle="dropdown"><span title="Neil Gogte">Neil Gogte</span>			      				 | Instructor								<b class="caret"></b>
+						</a>
+
+					</li>
+					<li class="dropdown" id="tl-dropdown-goto">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Goto&nbsp;<b class="caret"></b></a>
+
+					</li>
+					<li class="dropdown" id="tl-dropdown-messages">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages&nbsp;<b class="caret"></b></a>
+
+					</li>
+					<li class="divider-vertical" style="margin-left: 3px;"></li>
+					<li class="dropdown open hidden-phone hidden-tablet">
+						<input autocomplete="off" class="span2 ui-autocomplete-input" id="tl-spotlight" style="margin-top: 12px; font-style: italic; color: #555;" placeholder="Locate..." type="text">
+					</li>
+					<li class="divider-vertical" style="margin-right: 3px;"></li>
+					<li class="dropdown hidden-phone" id="tl-dropdown-help">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Help&nbsp;<b class="caret"></b></a>
+
+					</li>
+					<li><a id="navbar-logout" href="https://tpnl.talentlms.com/index/logout">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container container-demo">
+
+	<div class="report">
+		<div id="flip" onclick="toggle_visibility('panel')"><p id="fl" style="text-align:right;padding-right:20px;" ><i class="fa fa-angle-double-up" style="font-size:18px;"></i></p></div>
+		<div id="panel">
+			<div class="tleft" ><form style="margin: 0px;padding-top: 0px;">
+				<table style="width:100%">
+					<tr>
+						<td>
+							Course : </td><td><b>Core java</b></td>
+					</tr>
+					<tr>
+						<td>Chapter : </td><td><select name="topics">
+						<option value="volvo">Inheritance</option>
+						<option value="saab">Collections</option>
+						<option value="mercedes">File I/O</option>
+					</select>
+					</td>
+					</tr>
+					<tr>
+						<td colspan="2"
+							style="padding-left: 150px;padding-top: 2px !important;
+							padding-right: 2px !important;
+							padding-bottom: 2px !important;">
+					<!--	<input class="btn" type="button" onclick="location.href='performers.html';" value="Performers Of The Day">-->
+						</td>
+</tr>
+				</table>
+
+			</form>
+			</div>
+			<div class="tright"><table id="t01" class="CSSTableGenerator">
+				<tr>
+					<th>S.No</th>
+					<th>Test</th>
+					<th>Description</th>
+					<th>Start/Stop</th>
+				</tr>
+				<tr >
+					<td  style="color:gray;">1</td>
+					<td  style="color:gray;">Quiz</td>
+					<td  style="color:gray;" >Inheritance</td>
+					<td ><img src="start.png" width="16px"/>
+						<img src="stop.png" width="16px"/>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Lab-1</td>
+					<td>Single Inheritance</td>
+					<td><img src="start.png" width="16px"/>
+						<img src="stop.png" width="16px"/>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Lab-2</td>
+					<td>Multi Level Inheritance</td>
+					<td><img src="start.png" width="16px"/>
+						<img src="stop.png" width="16px"/>
+					</td>
+				</tr>
+			</table>
+
+			</div>
+		</div>
+
+	<div class="sta">
+		<div class="sub">
+			<p class="subp" style="font-size: 20px;padding-top: 12px;"><b>Quiz In Progress</b></p>
+		</div>
+		<div class="sub">
+			<p class="subp"><b>Logged : 250 of 300</b></p>
+			<meter value="250" min="0" max="300">250 out of 300</meter><br/>
+		</div>
+		<div class="sub" >
+			<p class="subp"><b>Submited : 175 of 250</b></p>
+			<meter value="175" min="0" max="250">175 out of 250</meter><br/>
+		</div>
+
+		<div class="sub" style="border-right: 0px"><p class="subp"><b>Graded : 95 of 250</b></p>
+			<meter value="95" min="0" max="250">295out of 250</meter><br></div>
+
+
+
+
+	</div>
+	<div class="repo" ><div id="container" style="overflow-y: scroll; height:480px;padding-bottom:30px;" >
+		<script type="text/javascript" src="jquery.tablesorter.js"></script>
+
+		<script>
+			$(document).ready(function()
+					{
+						$("#myTable").tablesorter();
+					//	$("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} );
+
+					}
+			);
+		</script>
+
+		<table id="myTable"  class="CSSTableGenerator" >
+			<thead>
+			<tr>
+				<th>Status</th>
+				<th>S.NO</th>
+				<th>Full Name</th>
+				<th>Grade</th>
+				<th>Submission</th>
+				<th>Watch List</th>
+			</tr>
+			</thead>
+			<tbody >
+
+			<tr>
+				<td><img src=" flag-green-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0501</a></td>
+				<td><a href="reportstudentview.html">Varun</a></td>
+				<td>100</td>
+				<td>12:24:56 AM</td>
+				<td><img src=" eye-24-512.png" width="  24px"/></td>
+
+			</tr>
+			<tr>
+				<td><img src=" flag-green-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0505</a></td>
+				<td><a href="reportstudentview.html">Raju</a></td>
+				<td>70</td>
+				<td>12:20:46 AM</td>
+				<td><img src=" eye-24-512.png" width="  24px"/></td>
+
+			</tr>
+			<tr>
+				<td><img src=" flag-green-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0508</a></td>
+				<td><a href="reportstudentview.html">Rahul</a></td>
+				<td>60</td>
+				<td>12:10:24 AM</td>
+				<td><img src=" eye-24-512.png" width="  24px"/></td>
+
+			</tr>
+
+
+
+			<tr>
+				<td><img src=" flag-orange-icon.png" width="  16px"/></td>
+				<td><a href="reportstudentview.html">10BD1A0501</a></td>
+				<td><a href="reportstudentview.html">Mahesh</a></td>
+				<td>100</td>
+				<td>12:24:55 AM</td>
+				<td><img src=" eye-24-512.png" width="  24px"/></td>
+
+			</tr>
+
+			<tr>
+				<td><img src=" flag-orange-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0504</a></td>
+				<td><a href="reportstudentview.html">Ram Krishna</a></td>
+				<td>90</td>
+				<td>12:20:55 AM</td>
+				<td><img src=" eye-24-512.png" width="  24px"/></td>
+
+			</tr>
+			<tr>
+				<td><img src=" flag-orange-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0505</a></td>
+				<td><a href="reportstudentview.html">Krishna</a></td>
+				<td>90</td>
+				<td>12:15:55 AM</td>
+				<td><img src=" eye-24-512.png" width="  24px"/></td>
+
+			</tr>
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px"/></td>
+				<td><a href="reportstudentview.html">10BD1A0520</a></td>
+				<td><a href="reportstudentview.html">Mohan Krishna</a></td>
+				<td>60</td>
+				<td>12:40:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0526</a></td>
+				<td><a href="reportstudentview.html">Sai Charan</a></td>
+				<td>100</td>
+				<td>12:50:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px"/></td>
+				<td><a href="reportstudentview.html">10BD1A0539</a></td>
+				<td><a href="reportstudentview.html">Ajay Chandra</a></td>
+				<td>60</td>
+				<td>12:40:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0526</a></td>
+				<td><a href="reportstudentview.html">Sai Santosth</a></td>
+				<td>100</td>
+				<td>12:50:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+					<tr>
+				<td><img src=" flag-red-icon.png" width="  16px"/></td>
+				<td><a href="reportstudentview.html">10BD1A0523</a></td>
+				<td><a href="reportstudentview.html">Mohan Krishna</a></td>
+				<td>60</td>
+				<td>12:40:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0536</a></td>
+				<td><a href="reportstudentview.html">Sai Jyothi</a></td>
+				<td>100</td>
+				<td>12:50:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px"/></td>
+				<td><a href="reportstudentview.html">10BD1A0539</a></td>
+				<td><a href="reportstudentview.html">Ajay Basava</a></td>
+				<td>60</td>
+				<td>12:40:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0546</a></td>
+				<td><a href="reportstudentview.html">Sai Krishna K</a></td>
+				<td>100</td>
+				<td>12:50:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0556</a></td>
+				<td><a href="reportstudentview.html">Sai</a></td>
+				<td>100</td>
+				<td>12:50:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px"/></td>
+				<td><a href="reportstudentview.html">10BD1A0539</a></td>
+				<td><a href="reportstudentview.html">Ajay</a></td>
+				<td>60</td>
+				<td>12:40:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+
+			<tr>
+				<td><img src=" flag-red-icon.png" width="  16px" /></td>
+				<td><a href="reportstudentview.html">10BD1A0576</a></td>
+				<td><a href="reportstudentview.html">Sai Krishna</a></td>
+				<td>100</td>
+				<td>12:50:55 AM</td>
+				<td><img src=" unwatch-512.png" width="  24px"/></td>
+			</tr>
+
+
+
+
+			</tbody>
+		</table>
+	</div>
+		<div id="scrollable"></div>
+	</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body></html>
